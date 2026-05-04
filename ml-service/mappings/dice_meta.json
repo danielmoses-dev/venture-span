@@ -1,0 +1,1 @@
+{"continuous_features": ["company_age", "milestones", "relationships", "funding_total_usd", "funding_rounds"], "outcome_name": "status_encoded"}
