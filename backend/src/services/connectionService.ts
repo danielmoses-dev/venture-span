@@ -51,7 +51,7 @@ export const getMyConnections = async (userId: string, role: 'startup' | 'invest
   const col = role === 'startup' ? 'startup_id' : 'investor_id'
   const otherCol = role === 'startup' ? 'investor_id' : 'startup_id'
   const profileTable = role === 'startup' ? 'investor_profiles' : 'startup_profiles'
-  const profileCol   = role === 'startup' ? 'investor_id' : 'startup_id'
+  //const profileCol   = role === 'startup' ? 'investor_id' : 'startup_id'
 
   const result = await query(
     `SELECT c.*, p.name as other_name, p.id as other_profile_id
