@@ -6,6 +6,8 @@ const ML_URL = process.env.ML_SERVICE_URL || 'http://localhost:8000'
 
 export const runMlPrediction = async (profile: StartupProfile): Promise<MlResult | null> => {
   try {
+    console.log("🔥 ML URL:", ML_URL)
+    
     const payload = {
       category:          profile.industry,
       country:           profile.country_code,
